@@ -466,6 +466,39 @@ display: block;
 
 }
 
+@media screen and (max-width: 300px) {
+
+.frontpagetitle{
+  padding-top: 50%;
+
+
+}
+
+.frontpagetitle img{
+
+  max-width: 90%;
+  max-height: 90%;
+
+}
+
+.frontpagetitle h1{
+    font-size: 26px;
+    font-size: 8vw;
+}
+
+.frontpagetitle h2{
+    font-size: 14px;
+    font-size: 6vw;
+    padding-top: 30px;
+}
+
+.frontpagetitle p{
+    font-size: 12px;
+    font-size: 4vw;
+}
+
+}
+
 /*ABOUT PAGE*/
 
 .projectshowcase li{
@@ -494,6 +527,7 @@ font-size: 22px;
     transition: 0.5s;
     padding-top: 60px;
     text-align:center;
+    z-index: 999;
 }
 
 .sidenav hr{
@@ -782,6 +816,56 @@ opacity: .6;
 
 }
 
+@media screen and (max-width: 500px) {
+
+/*.projectspagehead{
+
+  z-index: -1;
+  font-family: neoubold;
+  text-align: center;
+  width: 90%;
+  margin: auto auto;
+
+ display: block;
+
+
+}*/
+
+.projectspagehead li{
+  display: inline-block;
+  font-size: 12px;
+    font-size: 2vw;
+
+}
+
+.projectspagenav{
+      padding-right: 40px;
+    margin-bottom: 10px;
+/*    margin-top: -90px;*/
+    display: inline-block;
+}
+
+.projectspagehead a{
+  color: #990000;
+}
+
+.projectspagehead h1{
+  font-size: 32px;
+  font-size: 8vw;
+  margin-top: 100px;
+}
+
+.projectspagehead h2{
+  font-size: 16px;
+  font-size: 4vw;
+}
+
+.projectspagehead p{
+  font-size: 12px;
+  font-size: 3vw;
+}
+
+}
 
 
 /*WEB PROJECTS CSS*/
