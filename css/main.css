@@ -1,0 +1,1030 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+/*    line-height: 1.4;*/
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*NON BOILER PLATE START:*/
+
+body{
+    background-color: #F8F8F8;
+background-image: url("../img/cardboard.png");
+background-image: url("../img/bedge-grunge.png");
+background-image: url("../img/beige-paper.png");
+background-image: url("../img/billie-holiday.png");
+background-image: url("../img/brilliant.png");
+background-image: url("../img/clean-gray-paper.png");
+margin:0px;
+font-family: arial;
+
+/*    overflow-y: hidden; */
+        overflow-x: hidden; 
+}
+
+@font-face {
+    font-family: neou;
+    src: url(../fonts/Neou-Thin.ttf);
+}
+
+@font-face {
+    font-family: neoubold;
+    src: url(../fonts/Neou-Bold.ttf);
+}
+
+.frontpagetitle{
+/*  max-width:430px;
+  max-height:295px;*/
+  width: auto;
+  height: auto;
+  display: block;
+  padding-top: 10%;
+
+
+}
+
+.frontpagetitle hr {
+
+width: 30%;
+margin: auto auto;
+margin-top: -80px;
+border-top: 1px solid #999;
+}
+
+
+
+.frontpagetitle h1{
+    font-family: neoubold;
+    font-size: 24px;
+    font-size: 3vw;
+    left: 0;
+    margin: auto;
+    margin-top: -100px;
+
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.frontpagetitle h2{
+    font-family: neoubold;
+    font-size: 18px;
+    font-size: 2vw;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+display: block;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.frontpagetitle p{
+    font-family: neoubold;
+    font-size: 14px;
+    font-size: 1vw;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+display: block;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    padding-top: -10px;
+}
+
+.frontpagetitle img{
+
+    display: block;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+  width: auto;
+  height: auto;
+  max-width: 40%;
+  max-height: 40%;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+.frontpagetitle{
+  padding-top: 25%;
+
+
+}
+
+.frontpagetitle img{
+
+  max-width: 70%;
+  max-height: 70%;
+
+}
+
+.frontpagetitle h1{
+    font-size: 32px;
+    font-size: 5vw;
+}
+
+.frontpagetitle h2{
+    font-size: 24px;
+    font-size: 4vw;
+    padding-top: 30px;
+}
+
+.frontpagetitle p{
+    font-size: 18px;
+    font-size: 3vw;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+.frontpagetitle{
+  padding-top: 50%;
+
+
+}
+
+.frontpagetitle img{
+
+  max-width: 90%;
+  max-height: 90%;
+
+}
+
+.frontpagetitle h1{
+    font-size: 26px;
+    font-size: 8vw;
+}
+
+.frontpagetitle h2{
+    font-size: 18px;
+    font-size: 6vw;
+    padding-top: 30px;
+}
+
+.frontpagetitle p{
+    font-size: 12px;
+    font-size: 4vw;
+}
+
+}
+
+/*ABOUT PAGE*/
+
+.projectshowcase li{
+  list-style: none;
+  padding-right: 3%;
+
+}
+
+.projectshowcase h2{
+font-family: neou;
+font-size: 22px;
+/*font-size: 1.5vw;*/
+}
+
+/*NAV STUFF*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav hr{
+  width: 70%;
+  margin: auto;
+  border-top: 1px solid #222;
+}
+
+.sidenav a {
+  font-family: neoubold;
+    padding: 8px 0px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+/*PROJECTS PAGE:*/
+
+
+
+.image1{
+-webkit-clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+position: relative;
+display: inline-block;
+overflow: hidden;
+z-index: 2;
+width: 100%;
+
+/*margin-top: 50%;*/
+
+}
+.image2{
+-webkit-clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+display: inline-block;
+position: relative;
+  top: 0;
+  left: 0;
+z-index: 1;
+margin-top: -20%;
+
+width: 100%;
+}
+.image3{
+-webkit-clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+display: inline-block;
+position: relative;
+  top: 0;
+  left: 0;
+z-index: 1;
+margin-top: -20%;
+
+width: 100%;
+}
+.image4{
+-webkit-clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+display: inline-block;
+position: relative;
+  top: 0;
+  left: 0;
+z-index: 1;
+margin-top: -20%;
+
+width: 100%;
+}
+.image1 img{
+    width: 100%;
+    height: auto;
+
+
+}
+
+.image2 img{
+    width: 100%;
+    height: auto;
+}
+.image3 img{
+    width: 100%;
+    height: auto;
+
+
+}
+
+.image4 img{
+    width: 100%;
+    height: auto;
+}
+
+.projectcontainer{
+text-align: center;
+
+}
+
+.projectspagehead{
+
+  z-index: -1;
+  font-family: neoubold;
+  text-align: center;
+  width: 90%;
+  margin: auto auto;
+ /* padding-bottom: 10%;*/
+ display: block;
+
+
+}
+
+.projectspagehead li{
+  display: inline-block;
+  font-size: 10px;
+    font-size: 1vw;
+    text-align: center;
+
+}
+
+.projectspagenav{
+      padding-right: 40px;
+    margin-bottom: 10px;
+/*    margin-top: -90px;*/
+    display: inline-block;
+}
+
+.projectspagehead a{
+  color: #990000;
+}
+
+.projectspagehead h1{
+  font-size: 32px;
+  font-size: 4vw;
+}
+
+.projectspagehead h2{
+  font-size: 16px;
+  font-size: 1.5vw;
+}
+
+
+.projectspagehead hr{
+width: 30%;
+margin: auto auto;
+border-top: 1px solid #999;
+}
+
+.hrcluster hr{
+  width: 60%;
+}
+
+
+.imageoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-size: contain;
+}
+
+.overlaytext{
+  color: #fafafa;
+  font-size: 24px;
+  font-size: 3vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-shadow: 2px 2px #333;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*#im h1{
+    text-align: center;
+    padding-top: 20%;
+}*/
+
+.image1:hover .imageoverlay {
+background-color: black;
+opacity: .6;
+}
+.image2:hover .imageoverlay {
+background-color: black;
+opacity: .6;
+}
+.image3:hover .imageoverlay {
+background-color: black;
+opacity: .6;
+}
+.image4:hover .imageoverlay {
+background-color: black;
+opacity: .6;
+}
+
+
+.chevron::before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.45em;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+
+.chevron.bottom:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+
+@media screen and (max-width: 1000px) {
+
+/*.projectspagehead{
+
+  z-index: -1;
+  font-family: neoubold;
+  text-align: center;
+  width: 90%;
+  margin: auto auto;
+
+ display: block;
+
+
+}*/
+
+.projectspagehead li{
+  display: inline-block;
+  font-size: 12px;
+    font-size: 2vw;
+
+}
+
+.projectspagenav{
+      padding-right: 40px;
+    margin-bottom: 10px;
+/*    margin-top: -90px;*/
+    display: inline-block;
+}
+
+.projectspagehead a{
+  color: #990000;
+}
+
+.projectspagehead h1{
+  font-size: 32px;
+  font-size: 4vw;
+}
+
+.projectspagehead h2{
+  font-size: 14px;
+  font-size: 2vw;
+}
+
+.projectspagehead p{
+  font-size: 12px;
+  font-size: 1.5vw;
+}
+
+}
+
+
+
+/*WEB PROJECTS CSS*/
+
+
+
+.subprojectimgbox{
+  background-color: #4d0000;
+  background-image: url("../img/tile19.png");
+  width: 100%;
+  height: auto;
+  overflow: none;
+  text-align: center;
+  margin-bottom: -25px;
+}
+
+.subprojectimgbox img{
+  max-width:1400px;
+  max-height:700px;
+  width: 50%;
+  height: 50%;
+  margin-top: 10px;
+}
+
+.subprojectimgbox1{
+  background-color: #3D2A74;
+  width: 100%;
+  height: auto;
+  overflow: none;
+  text-align: center;
+  margin-bottom: -25px;
+}
+
+.subprojectimgbox1 img{
+  max-width:1400px;
+  max-height:700px;
+  width: 95%;
+  height: 95%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.subprojectimgbox2{
+  background-color: #fafafa;
+  width: 100%;
+  height: auto;
+  overflow: none;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+.subprojectimgbox2 img{
+  max-width:1400px;
+  max-height:700px;
+  width: 95%;
+  height: 95%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.subprojectimgbox3{
+  background-color: #f9f9f9;
+  width: 100%;
+  height: auto;
+  overflow: none;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+.subprojectimgbox3 img{
+  max-width:1400px;
+  max-height:700px;
+  width: 95%;
+  height: 95%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.subprojectimgbox4{
+  background-color: #222;
+  width: 100%;
+  height: auto;
+  overflow: none;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+.subprojectimgbox4 img{
+  max-width:1400px;
+  max-height:700px;
+  width: 95%;
+  height: 95%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.subprojectimgbox5{
+  background-color: #f9f9f9;
+  width: 100%;
+  height: auto;
+  overflow: none;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+.subprojectimgbox5 img{
+  max-width:1380px;
+  max-height:820px;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.subprojectimgbox6{
+background-color: #F8F8F8;
+/*background-image: url("../img/cardboard.png");*/
+background-image: url("../img/bedge-grunge.png");
+
+  width: 100%;
+  height: auto;
+  overflow: none;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+.subprojectimgbox6 img{
+  max-width:800px;
+  max-height:330px;
+  width: 95%;
+  height: 95%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+
+.projectinfo{
+background-color: #fff;
+width: 100%;
+display: block;
+text-align: center;
+}
+
+.projectinfo h1{
+padding-top: 5%;
+  font-family: neou;
+}
+.projectinfo p{
+padding-bottom: 5%;
+margin-bottom: -30px;
+
+}
+
+.projectinfotext{
+  width: 90%;
+  margin: auto;
+  line-height: 1.8em;
+  font-size: 1.2rem;
+}
+
+.projectshowcase{
+  width: 100%;
+  height: auto;
+  background-color: #faf9f5;
+  text-align: center;
+  padding-bottom: 5%;
+
+}
+
+.projectshowcase h1{
+padding-top: 5%;
+  font-family: neou;
+}
+
+.projectshowcase p{
+/*padding-bottom: 10px;*/
+}
+
+.projectshowcasetext{
+  width: 90%;
+  margin: auto;
+  line-height: 1.8em;
+  font-size: 1.2rem;
+  text-align: center;
+
+}
+
+.projectshowcase hr{
+  width: 70%;
+  margin: auto;
+  display: block;
+  padding-bottom: 5%;
+}
+
+.webdev-images img{
+  padding-bottom: 5%;
+  width: 100%;
+  height:100%;
+  max-width: 1200px;
+/*  max-height: 900px;*/
+
+}
+
+.webdev-images-responsive img{
+  padding-bottom: 5%;
+  width: 100%;
+  height:100%;
+  max-width: 1000px;
+  max-height: 2400px;
+}
+
+
+
+/*UNIVERSITY PROJECTS CSS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+  background-color: #fff;
+}

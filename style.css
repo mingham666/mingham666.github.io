@@ -1,0 +1,178 @@
+body{
+	background-color: #F8F8F8;
+background-image: url("img/cardboard.png");
+background-image: url("img/bedge-grunge.png");
+background-image: url("img/beige-paper.png");
+background-image: url("img/billie-holiday.png");
+background-image: url("img/brilliant.png");
+background-image: url("img/clean-gray-paper.png");
+margin:0px;
+font-family: arial;
+
+/*    overflow-y: hidden; 
+        overflow-x: hidden; */
+}
+
+@font-face {
+    font-family: neou;
+    src: url(fonts/Neou-Thin.ttf);
+}
+
+@font-face {
+    font-family: neoubold;
+    src: url(fonts/Neou-Bold.ttf);
+}
+
+.frontpagetitle{
+/*  max-width:430px;
+  max-height:295px;*/
+  width: auto;
+  height: auto;
+  display: block;
+  padding-top: 10%;
+
+
+}
+
+.frontpagetitle hr {
+
+
+}
+
+
+
+.frontpagetitle h1{
+	font-family: neoubold;
+	font-size: 24px;
+	font-size: 3vw;
+    left: 0;
+    margin: auto;
+    margin-top: -100px;
+
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.frontpagetitle h2{
+	font-family: neoubold;
+	font-size: 18px;
+	font-size: 2vw;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+display: block;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.frontpagetitle p{
+	font-family: neoubold;
+	font-size: 14px;
+	font-size: 1vw;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+display: block;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    padding-top: -10px;
+}
+
+.frontpagetitle img{
+
+    display: block;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+  width: auto;
+  height: auto;
+  max-width: 40%;
+  max-height: 40%;
+
+}
+/*.test{
+	margin-top: -400px;
+	margin-left: 700px;
+	z-index: -1;
+	position: absolute;
+
+}*/
+.topnav img{
+	height: 50px;
+	width: 50px;
+}
+
+.topnav {
+      z-index:1;
+padding-bottom: 50px;
+margin: none;
+top: 0;
+/*    background-color: #3e5368;*/
+    width: 100%;
+      text-align: center;
+      display: inline-block;
+      	font-family: neoubold;
+
+}
+
+/*Nav Links*/
+.topnav a {
+
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    vertical-align: middle;
+        text-shadow: 1px 2px #333;
+}
+
+/*Nav Links Hover*/
+.topnav a:hover {
+    background-color: #546A7F;
+
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+    font-size: 40px;
+
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+
+  .topnav.responsive a.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+
+  }
+}
