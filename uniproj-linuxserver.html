@@ -25,28 +25,15 @@
         <![endif]-->
 
         <!-- Navbar start -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <hr>
+<div class="topnav" id="myTopnav">
   <a href="index.html">Home</a>
-  <hr>
-  <a href="about.html">About Me</a>
-  <hr>
-  <a href="projects.html">Projects</a>
-  <hr>
+  <a href="about.html">Profile</a>
+  <a href="projects.html" class="active">Academic</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-
-<span style="font-size:40px;cursor:pointer;color:white;background-color:#222;margin:5px;padding:10px;position:fixed;line-height:70%;    box-shadow: 2px 2px 0px #fff;" onclick="openNav()">&#9776;</span>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
         <!--     Navbar End -->
 
 
@@ -58,7 +45,7 @@ function closeNav() {
 <div class="projectinfo" >
     <div class="projectinfotext" >
     <h1>Linux Server Management - Bank Network Scenario</h1>
-    <p>If the website development module was my favourite module in the second year, network server management was an immensely close second. Me and my partner put in such an incredible amount of hours to make this project feasible, the scope of it was huge compared to what was asked of us, but since we both have a huge interest in server infrastructure, we absolutely couldn't half-ass it. The module was split into two parts, with the first semester being Windows Server based scenarios and the second being Linux. We tried to use as much physical hardware as possible (as you can see in the images on this page).</p>
+    <p>If the website development module was my favourite module in the second year, network server management was an immensely close second. Me and my partner put in such an incredible amount of hours to make this project feasible, the scope of it was huge compared to what was asked of us, but since we both have a huge interest in server infrastructure, we absolutely couldn't let this opportunity to go all out pass. The module was split into two parts, with the first semester being Windows Server based scenarios and the second being Linux. We tried to use as much physical hardware as possible (as you can see in the images on this page).</p>
                 <a  style="color:black;" href="projects.html#linuxserver"><p>-Return to Projects-</p></a>
     </div>
 </div>
@@ -138,5 +125,19 @@ function closeNav() {
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
     </body>
 </html>

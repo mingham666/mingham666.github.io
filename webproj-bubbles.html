@@ -24,30 +24,20 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Navbar start -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <hr>
+
+
+       <!-- Navbar start -->
+<div class="topnav" id="myTopnav">
   <a href="index.html">Home</a>
-  <hr>
-  <a href="about.html">About Me</a>
-  <hr>
-  <a href="projects.html">Projects</a>
-  <hr>
+  <a href="about.html">Profile</a>
+  <a href="projects.html">Academic</a>
+  <a href="portfolio.html" class="active">Portfolio</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-
-<span style="font-size:40px;cursor:pointer;color:white;background-color:#222;margin:5px;padding:10px;position:fixed;line-height:70%;    box-shadow: 2px 2px 0px #fff;" onclick="openNav()">&#9776;</span>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
         <!--     Navbar End -->
+
 
 
 
@@ -59,7 +49,7 @@ function closeNav() {
     <div class="projectinfotext" >
     <h1>Bubbles Launderette</h1>
     <p>This bit of work came along immediately after I finished work on Avelino. There are a few Bubbles Launderettes local to me, but the store this site was made for is the Bubbles Launderette of Rawdon (the owners of which used to own all the others until they were sold off). This was my second paid job as a freelance website developer, so I took it without even thinking about it, anything to grow the old portfolio after all. I actually struggled on this one a bit, mostly due to being uncertain about which direction to take the design in, but I got there in the end.</p>
-                <a  style="color:black;" href="projects.html#bubbles"><p>-Return to Projects-</p></a>
+                <a  style="color:black;" href="portfolio.html#bubbles"><p>-Return to Portfolio-</p></a>
     </div>
 </div>
 
@@ -138,5 +128,18 @@ function closeNav() {
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
     </body>
 </html>

@@ -24,155 +24,66 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+
+
         <!-- Navbar start -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <hr>
+<div class="topnav" id="myTopnav">
   <a href="index.html">Home</a>
-  <hr>
-  <a href="about.html">About Me</a>
-  <hr>
-  <a href="projects.html">Projects</a>
-  <hr>
+  <a href="about.html">Profile</a>
+  <a href="projects.html" class="active">Academic</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-
-<span style="font-size:40px;cursor:pointer;color:white;background-color:#222;margin:5px;padding:10px;position:fixed;line-height:70%;    box-shadow: 2px 2px 0px #fff;top:0;z-index:999;" onclick="openNav()">&#9776;</span>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
         <!--     Navbar End -->
 
 
-
-<div class="projectspagehead" >
-<h1 style="font-size36px;font-size:10vw;padding-top:5%;margin-bottom:-10px;" >Projects Overview</h1>
-    <div class="projectspagenav">
-        <ul>
-        <a href="#webproj"><li>Personal Projects</li></a>
-        <li>//</li>
-        <a href="#uniproj"><li>Uni Projects</li></a>
-        </ul>
-    </div>
-
-<div class="hrcluster">
-<hr>
-<hr>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-
-<h1 id="webproj" >Personal Projects</h1>
-<hr>
-<p>Below is a section that links to all of my (web developemnt) projects that I undertook outside of university time/commitments. While I do have a few personal projects that aren't website development based, such as managing servers at home and building media collections, they are certainly not as interesting to anyone except me to display on a site like this!</p>
-<br>
-<br>
-<h2>As Above, So Below - Scroll to view content</h2>
-<span class="chevron bottom"></span>
-</div>
-<div  class="projectcontainer" >
-
-    <a id="powerfoundry" href="webproj-powerfoundry.html"><div class="image1">
-            <img   src="img/pf-projpage-img.png">
-            <div class="imageoverlay">
-                <h1  class="overlaytext">Folkvangr Music Blog</h1>
-            </div>
-        </div></a>
-
-    <a id="avelino" href="webproj-avelino.html"><div class="image2">
-        <img   src="img/avelino-projpage-img.png">
-            <div class="imageoverlay">
-                <h1  class="overlaytext">Avelino</h1>
-            </div>
-        </div></a>
-
-    <a id="bubbles" href="webproj-bubbles.html"><div class="image3">
-        <img   src="img/bubbles-projpage-img.png">
-            <div class="imageoverlay">
-                <h1  class="overlaytext">Bubbles Launderette</h1>
-            </div>
-        </div></a>
-
-        <a id="sahara" href="webproj-sahara.html"><div class="image5">
-        <img   src="img/sahara-projpage.png">
-            <div class="imageoverlay">
-                <h1  class="overlaytext">Sahara Dashboard</h1>
-            </div>
-        </div></a>
-
-    <a id="portfolio" href="webproj-portfolio.html"><div class="image4">
-        <img   src="img/portfolio-projpage.png">
-            <div class="imageoverlay">
-                <h1  class="overlaytext">This Portfolio Website</h1>
-            </div>
-        </div></a>
-
-
+<div class="pagetitleheader">
+<h1>Academic</h1>
 </div>
 
 
 
 
 
-<div class="projectspagehead" >
-<br>
-<br>
-<h1 id="uniproj">University Projects</h1>
-<hr>
-<p>Below are some of the projects I've worked on during my time at university on the course Bsc. Computer Network Management and Design.</p>
-<br>
-<br>
-<h2>As Above, So Below - Scroll to view content</h2>
-<span class="chevron bottom"></span>
-</div>
-<div  class="projectcontainer" >
 
-    <a id="nsflecture" href="uniproj-lecture.html"><div class="image1">
-        <img   src="img/nsf-project-img.png">
-            <div class="imageoverlay">
-                <h1  class="overlaytext">Computer Security Lecture</h1>
+
+
+
+
+        <div class="row3"> 
+                <div class="row3c1">
+                    <a id="metaldetector" href="uniproj-metaldetector.html">
+                        <img alt="Metal Detector Website" src="img/metaldetectorprojectpageimage.png">
+                    </a>
+                </div>
+
+            <div id="lecture" class="row3c2">
+                    <a id="lecture" href="uniproj-lecture.html">
+                        <img alt="Sahara Dashboard" src="img/nsf-project-img.png">
+                    </a>
             </div>
-        </div></a>
+        </div>
 
-    <a id="metaldetector" href="uniproj-metaldetector.html"><div class="image2">
-        <img   src="img/metaldetectorprojectpageimage.png">
-            <div class="imageoverlay">
-                <h1  class="overlaytext">Metal Detector Events Site</h1>
+        <div class="row4"> 
+                <div class="row4c1">
+                    <a id="dissertation" href="uniproj-dissertation.html">
+                        <img alt="Metal Detector Website" src="img/dissertation-project-img.png">
+                    </a>
+                </div>
+
+            <div id="linuxserver" class="row4c2">
+                    <a id="linuxserver" href="uniproj-linuxserver.html">
+                        <img alt="Linux Server Uni Project" src="img/uniproj-syib-1.png">
+                    </a>
             </div>
-        </div></a>
-
-    <a id="linuxserver" href="uniproj-linuxserver.html"><div class="image3">
-        <img   src="img/linuxserver-project-img.png">
-            <div class="imageoverlay">
-                <h1  class="overlaytext">Linux Server Management Scenario</h1>
-            </div>
-        </div></a>
-
-            <a id="dissertation" href="uniproj-dissertation.html"><div class="image4">
-        <img   src="img/dissertation-project-img.png">
-            <div class="imageoverlay">
-                <h1  class="overlaytext">Final Year Dissertation</h1>
-            </div>
-        </div></a>
-
-
-
-</div>
+        </div>
 
 
 
 
-
-<p style="text-align:center;padding-top:70px;">Made with <i class="fa fa-heart " aria-hidden="true"></i> by Max Ingham </p>
+<p style="text-align:center;padding-top:70px;color: white;">Made with <i class="fa fa-heart " aria-hidden="true"></i> by Max Ingham </p>
 
 
 
@@ -209,5 +120,19 @@ function closeNav() {
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
     </body>
 </html>

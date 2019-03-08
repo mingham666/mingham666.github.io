@@ -24,29 +24,16 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Navbar start -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <hr>
+                 <!-- Navbar start -->
+<div class="topnav" id="myTopnav">
   <a href="index.html">Home</a>
-  <hr>
-  <a href="about.html">About Me</a>
-  <hr>
-  <a href="projects.html">Projects</a>
-  <hr>
+  <a href="about.html">Profile</a>
+  <a href="projects.html">Academic</a>
+  <a href="portfolio.html" class="active">Portfolio</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-
-<span style="font-size:40px;cursor:pointer;color:white;background-color:#222;margin:5px;padding:10px;position:fixed;line-height:70%;    box-shadow: 2px 2px 0px #fff;" onclick="openNav()">&#9776;</span>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
         <!--     Navbar End -->
 
 
@@ -60,7 +47,7 @@ function closeNav() {
     <div class="projectinfotext" >
     <h1>Sahara Dashboard</h1>
     <p>I was the one to move into our shared flat first in the final year of university. During this time, I got restless after finishing up any revision I thought I may need for the upcoming semester, so I put my time to better use than just dossing about an empty flat. Knowing that there would be an obscene amount of IT gear in this flat when my mates moved in, I decided to create a makeshift dashboard system to keep track of all the devices on the network and save any useful information pertaining to them. With this in mind, Sahara (Server and Host Abridged Registration Archive) was born, and yes, I really did phone it in with that acronym.</p>
-                <a  style="color:black;" href="projects.html#sahara"><p>-Return to Projects-</p></a>
+                <a  style="color:black;" href="portfolio.html#sahara"><p>-Return to Portfolio-</p></a>
     </div>
 </div>
 
@@ -137,5 +124,19 @@ function closeNav() {
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
     </body>
 </html>

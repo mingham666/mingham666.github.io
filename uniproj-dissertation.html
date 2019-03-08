@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Max Ingham | Project | Linux Server</title>
+        <title>Max Ingham | Project | Dissertation</title>
         <meta name="description" content="One of the higher grades I've recieved at university, this Linux server management project was gruelling, but paid off in the end.">
         <meta name="keywords" content="Max Ingham, Max, Ingham, Portfolio, Max Ingham Leeds, Leeds, UK, Max UK, Max Ingham UK, Max Ingham Projects, SHU, Sheffield Hallam, Sheffield Hallam Student, Student, Linux Project, Linux">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,29 +24,16 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Navbar start -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <hr>
+       <!-- Navbar start -->
+<div class="topnav" id="myTopnav">
   <a href="index.html">Home</a>
-  <hr>
-  <a href="about.html">About Me</a>
-  <hr>
-  <a href="projects.html">Projects</a>
-  <hr>
+  <a href="about.html">Profile</a>
+  <a href="projects.html" class="active">Academic</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-
-<span style="font-size:40px;cursor:pointer;color:white;background-color:#222;margin:5px;padding:10px;position:fixed;line-height:70%;    box-shadow: 2px 2px 0px #fff;" onclick="openNav()">&#9776;</span>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
         <!--     Navbar End -->
 
 
@@ -59,7 +46,7 @@ function closeNav() {
     <div class="projectinfotext" >
     <h1>Final Year Project - Internet of Things Dissertation</h1>
     <p>The final year project, the bane of any final year students life and a massive uphill battle the entire way. My initial idea was to do a language learning site that adapts and changes the site as you learn more as a sort of immersion mode. I was quickly brought back down to earth after a meeting from one of the potential supervisors telling me (indirectly) that it probably wouldn't be possible for me to do due to a number of things, such as me being on a networks course, and the fact that my coding experience is poor. (I did manage to create a basic version of the site with hacked together PHP code though, it picked words from a pool and kept track of how often you got it right/wrong and used that to determine whether you'd learnt the word or not). When that idea got shot down, I visited a supervisor on a whim about IoT security as a suggestion for a final year project, not realising that it pertained to non consumer devices like industrial sensors and GPS tracking, not smart doorbells and the like. Once I got handy with it, I was able to produce something that gained very high grades.</p>
-                <a  style="color:black;" href="projects.html#linuxserver"><p>-Return to Projects-</p></a>
+                <a  style="color:black;" href="projects.html#dissertation"><p>-Return to Projects-</p></a>
     </div>
 </div>
 
@@ -89,7 +76,7 @@ function closeNav() {
 </div>
 
 <hr>
-<p>Made with <i class="fa fa-heart " aria-hidden="true"></i> by Max Ingham </p>
+<p class="footertext">Made with <i class="fa fa-heart " aria-hidden="true"></i> by Max Ingham </p>
 
 
 
@@ -137,5 +124,19 @@ function closeNav() {
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
     </body>
 </html>
